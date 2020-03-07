@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.29519.181
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vic.SportsStore.WebApp", "Vic.SportsStore.WebApp\Vic.SportsStore.WebApp.csproj", "{463D81DB-3F00-4260-87A4-EAFD073C3252}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vic.SportsStore.Domain", "Vic.SportsStore.Domain\Vic.SportsStore.Domain.csproj", "{8E881E03-5069-4B4B-A21D-1B6ECE93815C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{463D81DB-3F00-4260-87A4-EAFD073C3252}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{463D81DB-3F00-4260-87A4-EAFD073C3252}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{463D81DB-3F00-4260-87A4-EAFD073C3252}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E881E03-5069-4B4B-A21D-1B6ECE93815C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E881E03-5069-4B4B-A21D-1B6ECE93815C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E881E03-5069-4B4B-A21D-1B6ECE93815C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E881E03-5069-4B4B-A21D-1B6ECE93815C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
