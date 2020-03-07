@@ -5,6 +5,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Vic.SportsStore.Domain.Abstract;
+using Vic.SportsStore.Domain.Concrete;
 
 namespace Vic.SportsStore.WebApp
 {
@@ -16,7 +18,8 @@ namespace Vic.SportsStore.WebApp
             builder.RegisterControllers(typeof(MvcApplication).Assembly).PropertiesAutowired();
 
 
-
+            // My added RegisterInstance
+            builder.RegisterInstance<IProductsRepository>(new InMemoryProductsRepository()).PropertiesAutowired();
 
 
 
