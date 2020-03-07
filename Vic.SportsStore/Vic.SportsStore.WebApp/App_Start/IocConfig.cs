@@ -18,7 +18,9 @@ namespace Vic.SportsStore.WebApp
             builder.RegisterControllers(typeof(MvcApplication).Assembly).PropertiesAutowired();
 
 
-            // My added RegisterInstance
+            ////////////////////////////////
+            // My added RegisterInstance //
+            ///////////////////////////////
             builder.RegisterInstance<IProductsRepository>(new InMemoryProductsRepository()).PropertiesAutowired();
 
 
