@@ -21,7 +21,8 @@ namespace Vic.SportsStore.WebApp
             ////////////////////////////////
             // My added RegisterInstance //
             ///////////////////////////////
-            builder.RegisterInstance<IProductsRepository>(new InMemoryProductsRepository()).PropertiesAutowired();
+            //builder.RegisterInstance<IProductsRepository>(new InMemoryProductsRepository()).PropertiesAutowired();
+            builder.RegisterInstance<IProductsRepository>(new EFProductsRepository()).PropertiesAutowired();
 
 
 
