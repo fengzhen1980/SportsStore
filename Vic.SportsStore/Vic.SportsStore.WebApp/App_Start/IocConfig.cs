@@ -24,8 +24,8 @@ namespace Vic.SportsStore.WebApp
             //builder.RegisterInstance<IProductsRepository>(new InMemoryProductsRepository()).PropertiesAutowired();
             builder.RegisterInstance<IProductsRepository>(new EFProductsRepository()).PropertiesAutowired();
 
-
-
+            builder.RegisterInstance<IOrderProcessor>(new EmailOrderProcessor(new EmailSettings())).PropertiesAutowired();
+            
             var container = builder.Build();
             DependencyResolver.SetResolver(new AutofacDependencyResolver(container));
         }
