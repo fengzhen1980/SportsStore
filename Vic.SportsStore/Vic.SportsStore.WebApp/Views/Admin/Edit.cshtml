@@ -2,8 +2,8 @@
 @{
     ViewBag.Title = "Admin: Edit " + @Model.Name;
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
-    //HtmlHelper.ClientValidationEnabled = false;
-    //HtmlHelper.UnobtrusiveJavaScriptEnabled = false;
+    HtmlHelper.ClientValidationEnabled = true;
+    HtmlHelper.UnobtrusiveJavaScriptEnabled = true;
 }
 <div class="panel">
     <div class="panel-heading">
