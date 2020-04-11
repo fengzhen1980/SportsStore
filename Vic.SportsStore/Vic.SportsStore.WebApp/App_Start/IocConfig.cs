@@ -28,7 +28,11 @@ namespace Vic.SportsStore.WebApp
 
             builder.RegisterInstance<IOrderProcessor>(new EmailOrderProcessor(new EmailSettings())).PropertiesAutowired();
 
-            builder.RegisterInstance<IAuthProvider>(new FormsAuthProvider()).PropertiesAutowired();
+            builder.RegisterType<EFDbContext>();
+
+            //builder.RegisterInstance<IAuthProvider>(new FormsAuthProvider()).PropertiesAutowired();
+            //builder.RegisterInstance<IAuthProvider>(new InMemoryAuthProvider()).PropertiesAutowired();
+            builder.RegisterType<EFAuthProvider>().PropertiesAutowired().As<IAuthProvider>().PropertiesAutowired();
 
             var container = builder.Build();
             DependencyResolver.SetResolver(new AutofacDependencyResolver(container));
